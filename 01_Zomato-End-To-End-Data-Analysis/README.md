@@ -119,7 +119,7 @@ The dashboard is organized into **6 interactive report pages**, each designed to
 - Navigation buttons
 - Dashboard branding
 
-![Home Page](Screenshots/Index.png)
+![Index Page](Screenshots/Index.png)
 
 ### 2. Overview
 Provides a high-level summary of overall business performance.
@@ -136,6 +136,8 @@ Provides a high-level summary of overall business performance.
 * Food Category Sales
 * Quantity vs Amount Toggle
 * Dynamic Top N City Analysis
+ 
+![Overview](Screenshots/Overview.png)
 
 ### 3. User Performance
 Analyzes customer demographics and purchasing behavior.
@@ -154,6 +156,8 @@ Analyzes customer demographics and purchasing behavior.
 * Customer Gain vs Loss Analysis
 * Gender-Based Sales Analysis
 
+![User Performance](Screenshots/User%20Performance.png)
+
 ### 4. City Performance
 Provides detailed city-level business insights.
 
@@ -168,6 +172,8 @@ Provides detailed city-level business insights.
 * City-wise User Count
 * City-wise Rating Count
 * Detailed City Performance Table
+
+![City Performance](Screenshots/City%20Performance.png)
 
 ### 5. Restaurant Analysis
 Evaluates restaurant performance across different categories.
@@ -185,6 +191,8 @@ Evaluates restaurant performance across different categories.
 * Restaurant Rating Comparison
 * Cuisine-wise Revenue Analysis
 
+![Restaurant Analysis](Screenshots/Restaurant%20Analysis.png)
+
 ### 6. Insights
 Summarizes key business findings and recommendations.
 
@@ -194,6 +202,8 @@ Summarizes key business findings and recommendations.
 * City-wise Business Performance
 * Restaurant Performance Summary
 * Business Recommendations based on dashboard analysis
+
+  ![Insights](Screenshots/Insights.png)
   
 ## Interactive Features
 
