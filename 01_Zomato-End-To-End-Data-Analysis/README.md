@@ -10,20 +10,19 @@ Designed a **Zomato-themed Power BI dashboard** to analyze sales performance, us
 ![Home](Screenshots/Home%20Page.png)
 
 ### 2. Overview  
-![Overview](Dashboard/Dashboard_IMG/Overviewr.png)
+![Overview](Screenshots/Overview.png)
 
 ### 3. User Performance  
-![User Performance](Dashboard/Dashboard_IMG/User%20Performance.png)
+![User Performance](Screenshots/User%20Performance.png)
 
-### 4. City Overview  
-![City Overview](Dashboard/Dashboard_IMG/City%20Overview.png)
+### 4. City Performance 
+![City Performance](Screenshots/City%20Performance.png)
 
 ### 5. Restaurant Analysis  
-![Restaurant Analysis](Dashboard/Dashboard_IMG/Restaurant%20Analysis.png)
+![Restaurant Analysis](Screenshots/Restaurant%20Analysis.png)
 
 ### 6. Insights  
-![Insights](Dashboard/Dashboard_IMG/Insights.png)
-
+ ![Insights](Screenshots/Insights.png)
 ---
 
 ## 📌 Project Overview
