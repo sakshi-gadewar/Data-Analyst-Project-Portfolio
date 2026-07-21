@@ -119,7 +119,7 @@ The dashboard is organized into **6 interactive report pages**, each designed to
 - Navigation buttons
 - Dashboard branding
 
-!Home Page](Screenshots/Index.png)
+![Home Page](Screenshots/Home%20Page.png)
 
 ### 2. Overview
 Provides a high-level summary of overall business performance.
