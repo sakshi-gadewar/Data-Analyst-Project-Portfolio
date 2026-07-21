@@ -4,7 +4,7 @@ Designed a **Zomato-themed Power BI dashboard** to analyze sales performance, us
 
 ---
 
-## 🖼️ Dashboard Previews
+## Dashboard Previews
 
 ### 1. Home Page
 ![Home](Screenshots/Home%20Page.png)
@@ -15,8 +15,8 @@ Designed a **Zomato-themed Power BI dashboard** to analyze sales performance, us
 ### 3. User Performance  
 ![User Performance](Screenshots/User%20Performance.png)
 
-### 4. City Analysis 
-![City Analysis](Screenshots/City%20Performance.png)
+### 4. City Analysis
+![City Analysis](Screenshots/City%20Analysis.png)
 
 ### 5. Restaurant Analysis  
 ![Restaurant Analysis](Screenshots/Restaurant%20Analysis.png)
@@ -25,7 +25,7 @@ Designed a **Zomato-themed Power BI dashboard** to analyze sales performance, us
  ![Insights](Screenshots/Insights.png)
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project analyzes Zomato's restaurant dataset to uncover insights into sales performance, customer behavior, restaurant performance, cuisine trends, and city-wise business growth.
 
@@ -38,7 +38,7 @@ Who are the most active customers?
 
 ---
 
-## 🎯 Business Problem Statement
+## Business Problem Statement
 
 Zomato operates across multiple cities and restaurants, generating large amounts of business data every day. Without an interactive reporting system, it becomes difficult to monitor business performance and identify growth opportunities.
 
@@ -61,13 +61,13 @@ Provide interactive reports that help stakeholders monitor KPIs and make data-dr
 
 ---
 
-## 🎯 Core Objective
+## Core Objective
 
 The goal of this project is to help Zomato make data-driven business decisions by converting large volumes of restaurant data into actionable insights. Using Power BI, Power Query, and DAX, the project analyzes restaurant performance, customer ratings, cuisines, pricing, and service availability to identify trends, evaluate business performance, and support strategic decision-making through an interactive dashboard.
 
 ---
 
-## 📌 Executive Summary
+## Executive Summary
 
 This project is an end-to-end data analytics solution developed using the **Zomato Restaurant Dataset**. The dashboard was designed in **Power BI** to transform raw restaurant data into meaningful business insights through interactive visualizations.
 
@@ -193,8 +193,8 @@ Provides detailed city-level business insights.
 * City-wise User Count
 * City-wise Rating Count
 * Detailed City Performance Table
-
- [View City Performance Dashboard](Screenshots/City%20Performance.png)
+* 
+[View City Analysis Dashboard](Screenshots/City%20Analysis.png)
 
 ### 5. Restaurant Analysis
 Evaluates restaurant performance across different categories.
