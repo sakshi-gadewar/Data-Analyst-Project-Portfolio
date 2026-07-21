@@ -23,62 +23,45 @@ Designed a **Zomato-themed Power BI dashboard** to analyze sales performance, us
 
 ### 6. Insights  
  ![Insights](Screenshots/Insights.png)
+ 
 ---
 
 ## Project Overview
 
-This project analyzes Zomato's restaurant dataset to uncover insights into sales performance, customer behavior, restaurant performance, cuisine trends, and city-wise business growth.
+This project is a **Power BI dashboard** built using the **Zomato Restaurant Dataset** to analyze sales performance, customer behavior, restaurant performance, cuisine trends, and city-wise business growth.
 
-The dashboard helps answer business questions such as:
+The dashboard was developed using **Power BI, Power Query, DAX, and Excel**. It combines business data into interactive reports, making it easier to explore sales trends, customer activity, restaurant performance, and city-wise comparisons.
 
-Which city has the highest order volume?
-Which restaurants are the top performers?
-What is the average order value per city or user?
-Who are the most active customers?
+The dashboard includes six interactive report pages with KPIs, charts, filters, and navigation buttons that allow users to explore the data from different perspectives.
 
+The project focuses on:
+
+- Sales and order performance
+- Customer behavior and demographics
+- Restaurant performance and ratings
+- City-wise business analysis
+- Cuisine trends and food preferences
+- Interactive reporting for business insights
+  
 ---
 
 ## Business Problem Statement
 
-Zomato operates across multiple cities and restaurants, generating large amounts of business data every day. Without an interactive reporting system, it becomes difficult to monitor business performance and identify growth opportunities.
+Zomato collects data from restaurants, customers, and orders across different cities. Analyzing this information manually can make it difficult to understand business performance and identify useful trends.
 
-This dashboard focuses on solving the following business problems:
+This dashboard was built to help answer business questions such as:
 
-### Revenue & Pricing Analysis
-Analyze sales performance across different cities and identify revenue trends.
+- Which cities generate the highest sales and order volume?
+- Which restaurants perform better based on sales and customer ratings?
+- Which cuisines and food categories are most popular?
+- How do customer demographics influence sales?
+- How can interactive reports help monitor KPIs and support better business decisions?
 
-### Restaurant Performance Evaluation
-Compare restaurants based on sales, ratings, and customer engagement to identify top-performing restaurants.
-
-### Customer Preference Analysis
-Understand customer preferences across cuisines, food categories, and demographic segments.
-
-### Geographic Performance Comparison
-Evaluate city-wise sales, users, and ratings to compare regional performance.
-
-### Decision Support
-Provide interactive reports that help stakeholders monitor KPIs and make data-driven decisions.
-
----
+  ---
 
 ## Core Objective
 
 The goal of this project is to help Zomato make data-driven business decisions by converting large volumes of restaurant data into actionable insights. Using Power BI, Power Query, and DAX, the project analyzes restaurant performance, customer ratings, cuisines, pricing, and service availability to identify trends, evaluate business performance, and support strategic decision-making through an interactive dashboard.
-
----
-
-## Executive Summary
-
-This project is an end-to-end data analytics solution developed using the **Zomato Restaurant Dataset**. The dashboard was designed in **Power BI** to transform raw restaurant data into meaningful business insights through interactive visualizations.
-
-The project focuses on:
-
-* Understanding restaurant distribution across cities.
-* Analyzing customer ratings and engagement.
-* Evaluating pricing patterns and affordability.
-* Identifying the most popular cuisines.
-* Assessing online delivery and table booking services.
-* Delivering an interactive dashboard to support strategic business decisions.
 
 ---
 
@@ -111,28 +94,59 @@ Rating
 
 ## Data Cleaning & Preparation
 
-The dataset was cleaned, transformed, and prepared for analysis using **Power Query** and **DAX** to ensure accurate reporting and meaningful insights.
+I used **Power Query** and **DAX** to clean and prepare the dataset before building the dashboard.
 
 ### Data Cleaning
-* Removed duplicate records to maintain data integrity.
-* Handled missing and null values.
-* Corrected inconsistent data formats and standardized values.
-* Renamed columns for better readability and consistency.
-* Verified data types for all fields.
-
+- Removed duplicate records.
+- Handled missing and null values where needed.
+- Corrected data types for accurate calculations.
+- Renamed columns to make the dataset easier to understand.
+- Standardized values to keep the data consistent.
+  
 ### Data Transformation
-* Created calculated columns to enhance data analysis.
-* Developed DAX measures for KPIs and business metrics.
-* Built relationships between tables to create an optimized data model.
-* Optimized the dataset for interactive reporting and dashboard performance.
+- Created calculated columns and DAX measures for KPIs.
+- Built relationships between tables for better analysis.
+- Prepared the data model to support interactive reports and filters.
+  
+### Result
+After cleaning and preparing the data, I was able to build an interactive Power BI dashboard with accurate KPIs, dynamic filters, and visualizations for sales, users, cities, and restaurant performance.
 
-### Outcome
-The cleaned and transformed dataset enabled accurate KPI calculations, dynamic filtering, and interactive visualizations across the dashboard, providing reliable business insights into sales, users, cities, and restaurant performance.
+  ---
+
+ ### DAX Measures Used
+
+I used DAX measures to calculate the main KPIs displayed in the dashboard.
+
+```DAX
+Total Sales =
+SUM(orders[Value])
+
+Total Orders =
+COUNTROWS(orders)
+
+Total Users =
+DISTINCTCOUNT(orders[user_id])
+
+Average Order Value =
+DIVIDE([Total Sales], [Total Orders])
+
+Average Rating =
+AVERAGE(restaurant[rating])
+```
+
+### Measures Used
+
+- **Total Sales** – Calculates the total sales amount.
+- **Total Orders** – Counts the total number of orders.
+- **Total Users** – Counts the number of unique users.
+- **Average Order Value** – Calculates the average value of each order.
+- **Average Rating** – Calculates the average restaurant rating.
+
   ---
   
   ## Dashboard Features
 
-The dashboard is organized into **6 interactive report pages**, each designed to provide actionable insights into Zomato's business performance.
+he dashboard contains **6 interactive report pages**, each focusing on a different part of Zomato's business performance.
 
 ### 1.Home Page
 
@@ -140,91 +154,68 @@ The dashboard is organized into **6 interactive report pages**, each designed to
 - Navigation buttons
 - Dashboard branding
 
- [View Home Page Dashboard](Screenshots/Home%20Page.png)
-
 ### 2. Overview
-Provides a high-level summary of overall business performance.
+Shows the overall business performance with key KPIs and sales trends.
 
-**Key Metrics**
-* Total Sales
-* Total Users
-* Total Orders
-* Total Rating Count
-
-**Visualizations**
-* City-wise Sales Analysis
-* Yearly Sales Trend
-* Food Category Sales
-* Quantity vs Amount Toggle
-* Dynamic Top N City Analysis
- 
- [View Overview Dashboard](Screenshots/Overview.png)
+**Includes**
+- Total Sales
+- Total Users
+- Total Orders
+- Total Rating Count
+- City-wise Sales Analysis
+- Yearly Sales Trend
+- Food Category Sales
+- Quantity vs. Amount Toggle
+- Top N City Analysis
 
 ### 3. User Performance
-Analyzes customer demographics and purchasing behavior.
+Analyzes customer behavior and user-related metrics.
 
-**Key Metrics**
-* Total Users
-* Gained Customers
-* Lost Customers
-* Current Year Sales
-* Previous Year Sales
-
-**Visualizations**
-* User Distribution by Age
-* Sales by Marital Status
-* Sales by Occupation
-* Customer Gain vs Loss Analysis
-* Gender-Based Sales Analysis
-
- [View User Performance Dashboard](Screenshots/User%20Performance.png)
+**Includes**
+- Total Users
+- Gained & Lost Customers
+- Current Year vs Previous Year Sales
+- User Age Distribution
+- Sales by Gender
+- Sales by Marital Status
+- Sales by Occupation
 
 ### 4. City Performance
-Provides detailed city-level business insights.
+Compares business performance across different cities.
 
-**Key Metrics**
-* Total Cities
-* Total Users
-* Current Year Sales
-* Previous Year Sales
-
-**Visualizations**
-* City-wise Sales Value
-* City-wise User Count
-* City-wise Rating Count
-* Detailed City Performance Table
-* 
-[View City Analysis Dashboard](Screenshots/City%20Analysis.png)
+**Includes**
+- Total Cities
+- Total Users
+- Current Year vs Previous Year Sales
+- City-wise Sales
+- City-wise User Count
+- City-wise Rating Count
+- Detailed City Performance Table
 
 ### 5. Restaurant Analysis
-Evaluates restaurant performance across different categories.
+Provides insights into restaurant performance and food preferences.
 
-**Key Metrics**
-* Restaurant Count
-* Current Year Sales
-* Previous Year Sales
-* Average Rating
-
-**Visualizations**
-* Restaurant Count by City
-* Restaurant Distribution by Food Type
-* Top Cuisine Categories
-* Restaurant Rating Comparison
-* Cuisine-wise Revenue Analysis
-
- [View Restaurant Analysis Dashboard](Screenshots/Restaurant%20Analysis.png)
+**Includes**
+- Restaurant Count
+- Average Rating
+- Current Year vs Previous Year Sales
+- Restaurant Count by City
+- Food Type Distribution
+- Top Cuisine Categories
+- Restaurant Rating Analysis
+- Cuisine-wise Revenue
 
 ### 6. Insights
-Summarizes key business findings and recommendations.
+Summarizes the main findings from the dashboard and provides business recommendations based on the analysis.
 
-**Insights Include**
-* Sales Performance Highlights
-* User Behavior Analysis
-* City-wise Business Performance
-* Restaurant Performance Summary
-* Business Recommendations based on dashboard analysis
+**Includes**
+- Sales Performance Summary
+- User Behavior Insights
+- City-wise Performance
+- Restaurant Performance
+- Business Recommendation
 
- [View Insights Dashboard](Screenshots/Insights.png)
+  ---
   
 ## Interactive Features
 
@@ -241,66 +232,36 @@ Summarizes key business findings and recommendations.
 
 ---
 
-## DAX Measures Used
-
-I created the following DAX measures to calculate key metrics used throughout the dashboard:
-
-```DAX
-Total Sales = SUM(orders[Value])
-
-Total Orders = COUNTROWS(orders)
-
-Total Users = DISTINCTCOUNT(orders[user_id])
-
-Average Order Value =
-DIVIDE([Total Sales], [Total Orders])
-
-Average Rating =
-AVERAGE(restaurant[rating])
-```
-
-  ---
-
   ## Filters & Slicers
 
 The dashboard includes interactive filters to help users explore the data from different perspectives:
 
-* Date Slicer
+* Year Slicer
 * City Slicer
 * Restaurant Slicer
 * Cuisine Slicer
+* Food Type Slicer
 * Dynamic Cross-filtering
-
 
   ---
 
   ## Key Insights
 
-* The top three cities generate more than **60% of all orders**, making them the strongest contributors to overall business performance.
-
-* **Tier 1 cities** consistently record the fastest delivery times, indicating a more efficient delivery network in these locations.
-
-* A relatively small group of restaurants contributes a significant share of total revenue, highlighting the importance of high-performing restaurant partners.
-
-* Some customers place orders more frequently and spend more per order than others. These users are ideal candidates for loyalty programs and personalized offers.
-
-* In several cities, **higher customer ratings are associated with shorter delivery times**, suggesting that delivery speed has a positive impact on customer satisfaction.
+- Top 3 cities contribute to over 60% of total orders.
+- Fastest deliveries are achieved in Tier 1 cities.
+- A small number of restaurants account for high revenue.
+- Some users place frequent high-value orders — potential for loyalty targeting.
+- Delivery time correlates with user rating in some areas.
 
   ---
 
-  ## What I Learned
+## What I Learned
 
-This project helped me improve my skills in:
-
-* Data Cleaning using Power Query
-* Data Modeling
-* DAX Calculations
-* KPI Development
-* Dashboard Design
-* Interactive Navigation using Bookmarks
-* Business Analysis
-* Data Visualization
-* Building user-friendly Power BI reports
+- How to clean and model complex datasets using Power Query.
+- Writing DAX functions for business logic.
+- Designing interactive, user-friendly dashboards.
+- Real-world storytelling with data.
+- Publishing and sharing Power BI reports publicly.
 
   ---
 
@@ -312,10 +273,10 @@ PowerBI_Zomato_Dashboard/
 ├──  Zomato_Dashboard.pbix          # Main Power BI dashboard
 ├── 📄README.md                     # Project documentation
 ├── 📁 Screenshots/                  # Dashboard screenshots
-│   ├── index_page.png
+│   ├── Home_page.png
 │   ├── overview.png
 │   ├── user_performance.png
-│   ├── city_performance.png
+│   ├── city_analysis.png
 │   ├── restaurant_analysis.png
 │   └── insights.png
 │
@@ -323,5 +284,13 @@ PowerBI_Zomato_Dashboard/
 ```
 
 ---
+
+### Author
+**Sakshi Gadewar**
+Aspiring Data Analyst | Power BI | Excel
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](www.linkedin.com/in/sakshi-gadewar-604175343)
+[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black?logo=github)](https://github.com/sakshi-gadewar)
+
 
 ## ⭐ If you found this project helpful, consider giving it a star!
