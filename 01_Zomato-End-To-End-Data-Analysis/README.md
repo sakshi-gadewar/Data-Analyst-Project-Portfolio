@@ -114,9 +114,12 @@ The cleaned and transformed dataset enabled accurate KPI calculations, dynamic f
 The dashboard is organized into **6 interactive report pages**, each designed to provide actionable insights into Zomato's business performance.
 
 ### 1. Index Page
-* Interactive landing page
-* Navigation buttons
-* Dashboard branding
+
+- Interactive landing page
+- Navigation buttons
+- Dashboard branding
+
+![Index Page](Screenshots/Index.png)
 
 ### 2. Overview
 Provides a high-level summary of overall business performance.
