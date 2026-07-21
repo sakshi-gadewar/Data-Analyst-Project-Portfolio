@@ -67,18 +67,18 @@ The goal of this project is to help Zomato make data-driven business decisions b
 
 ## Dataset
 
-The dataset includes approximately 10,000+ rows and contains the following columns:
+The project uses multiple related tables containing order, user, restaurant, and city data. The dataset includes information such as:
 
-Order ID
-User ID
-City
-Restaurant Name
-Cuisine
-Order Date
-Item Count
-Total Amount
-Delivery Time
-Rating
+- Order ID
+- User ID
+- City
+- Restaurant Name
+- Cuisine
+- Order Date
+- Item Count
+- Total Amount
+- Delivery Time
+- Rating
 
 ---
 
@@ -247,14 +247,28 @@ The dashboard includes interactive filters to help users explore the data from d
 
   ## Key Insights
 
-- Top 3 cities contribute to over 60% of total orders.
-- Fastest deliveries are achieved in Tier 1 cities.
-- A small number of restaurants account for high revenue.
-- Some users place frequent high-value orders — potential for loyalty targeting.
-- Delivery time correlates with user rating in some areas.
-
+- Tirupati generated the highest sales among all cities.
+- Vegetarian restaurants contributed slightly higher sales than non-vegetarian restaurants.
+- Customers aged 21–25 generated the highest order volume.
+- Bikaner recorded the highest restaurant and user count.
+- North Indian and Chinese cuisines generated the highest revenue.
+  
   ---
 
+## Skills Demonstrated
+
+- Data Cleaning
+- Data Modeling
+- Power Query
+- DAX
+- Dashboard Design
+- KPI Development
+- Interactive Reporting
+- Data Storytelling
+- Business Analysis
+
+  ---
+  
 ## What I Learned
 
 - How to clean and model complex datasets using Power Query.
@@ -289,8 +303,7 @@ PowerBI_Zomato_Dashboard/
 **Sakshi Gadewar**
 Aspiring Data Analyst | Power BI | Excel
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](www.linkedin.com/in/sakshi-gadewar-604175343)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/sakshi-gadewar-604175343)
 [![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black?logo=github)](https://github.com/sakshi-gadewar)
-
 
 ## ⭐ If you found this project helpful, consider giving it a star!
